@@ -1,0 +1,7 @@
+<app-header></app-header>
+
+<section class="cards">
+    <article *ngFor="let categoria of categorias" class="card card--1">
+      <app-categoria [categoria]="categoria"></app-categoria>
+    </article>
+</section>

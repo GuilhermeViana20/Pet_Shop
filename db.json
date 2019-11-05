@@ -1,0 +1,44 @@
+{
+  "categorias": [
+    {
+        "id": "cachorros",
+        "nome": "Cachorros",
+        "imagem":"",
+        "sobre": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut"
+    },
+
+    {
+        "id": "gatos",
+        "nome": "Gatos",
+        "imagem":"",
+        "sobre": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut"
+    },
+
+    {
+        "id": "passaros",
+        "nome": "Passaros",
+        "imagem":"",
+        "sobre": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut"
+    },
+
+    {
+        "id": "hamster",
+        "nome": "Hamster",
+        "imagem":"",
+        "sobre": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut"
+    }
+  ],
+
+"pets":[
+     {
+       "id":"cachorros",
+       "imagem":"",
+       "raca":"Bulldog",
+       "Altura":"31cm",
+       "peso":"18kg",
+       "idade": "5 meses",
+       "sexo": "Feminino"
+
+     }
+  ]
+}
