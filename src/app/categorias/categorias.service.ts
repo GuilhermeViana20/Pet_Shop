@@ -13,5 +13,6 @@ export class CategoriasService {
 
   obterCategorias(): Observable<Categoria[]>{
     return this.http.get<Categoria[]>(`${PETLOVE_API}/categorias`)
+  
 }
 }

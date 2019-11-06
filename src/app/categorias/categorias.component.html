@@ -2,12 +2,10 @@
 
 <section>
   <div class="container">
-    <div class="row">    
+    <div class="row">
       <div *ngFor="let categoria of categorias" class="col-md-4">
-        <div  class="card card-01 height-fix">
           <app-categoria [categoria]="categoria"></app-categoria>
         </div>
       </div>
-    </div>
   </div>
 </section>

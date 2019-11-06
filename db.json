@@ -22,6 +22,20 @@
     },
 
     {
+        "id": "peixes",
+        "nome": "Peixes",
+        "imagem":"",
+        "sobre": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut"
+    },
+
+    {
+        "id": "camaleao",
+        "nome": "Camaleão",
+        "imagem":"",
+        "sobre": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut"
+    },
+
+    {
         "id": "hamster",
         "nome": "Hamster",
         "imagem":"",
@@ -37,7 +51,19 @@
        "Altura":"31cm",
        "peso":"18kg",
        "idade": "5 meses",
-       "sexo": "Feminino"
+       "sexo": "Feminino",
+       "categoriaid":"cachorros"
+
+     },
+     {
+       "id":"gatos",
+       "imagem":"",
+       "raca":"Bulldog",
+       "Altura":"31cm",
+       "peso":"18kg",
+       "idade": "5 meses",
+       "sexo": "Feminino",
+       "categoriaid":"gatos"
 
      }
   ]
