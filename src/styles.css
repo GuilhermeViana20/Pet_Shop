@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700');
 
-section{
+.section{
   float:left;
   width:100%;
   padding:30px 0; 
@@ -11,7 +11,7 @@ section{
   margin: 30px;
 }
 
-section:before{
+.section:before{
   content:"";
   position:absolute; 
   width:110%; 

@@ -1,158 +1,127 @@
-@i@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-
-*{
-  box-sizing: border-box;
-}
-
-body, html {
-   font-family: 'Roboto Slab', serif;
-    margin: 0;
-  width: 100%;
-height: 100%;
-    padding: 0;
-}
+$fab-color: #E91E63;
+$fab-size: 50px;
+$link-color: #1976D2;
+/* End defaults*/
 
 body {
-  background-color: #D2DBDD;
-  display: flex;
-  display: -webkit-flex;
-  -webkit-justify-content: center;
-  -webkit-align-items: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.cards {
-    width: 100%;
-    display: flex;
-    display: -webkit-flex;
-    justify-content: center;
-    -webkit-justify-content: center;
-    max-width: 820px;
-}
-
-.card--1 .card__img, .card--1 .card__img--hover {
-    background-image: url('https://reservasantaanna.com.br/imgs/Informativos/2019/07/29/dog-1d3de396e1645033183155f69807e895.jpg');
-}
-
-.card--2 .card__img, .card--2 .card__img--hover {
-    background-image: url('https://www.dhresource.com/0x0/f2/albu/g10/M01/FC/9D/rBVaWVxF3oOAN5AmAABbtZGlS5A374.jpg');
-}
-
-.card__like {
-    width: 18px;
-}
-
-.card__clock {
-    width: 15px;
-  vertical-align: middle;
-    fill: #AD7D52;
-}
-.card__time {
-    font-size: 12px;
-    color: #AD7D52;
-    vertical-align: middle;
-    margin-left: 5px;
-}
-
-.card__clock-info {
-    float: right;
-}
-
-.card__img {
-  visibility: hidden;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 235px;
-  border-top-left-radius: 12px;
-border-top-right-radius: 12px;
-
-}
-
-.card__info-hover {
-    position: absolute;
-    padding: 16px;
-  width: 100%;
-  opacity: 0;
-  top: 0;
-}
-
-.card__img--hover {
-  transition: 0.2s all ease-out;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-  position: absolute;
-    height: 235px;
-  border-top-left-radius: 12px;
-border-top-right-radius: 12px;
-top: 0;
-
+  padding: 5rem;
 }
 .card {
-  margin-right: 25px;
-  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
-  background-color: #fff;
-    width: 33.3%;
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
-}
-.card:hover {
-  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
-    transform: scale(1.10, 1.10);
-}
-
-.card__info {
-z-index: 2;
-  background-color: #fff;
-  border-bottom-left-radius: 12px;
-border-bottom-right-radius: 12px;
-   padding: 16px 24px 24px 24px;
-}
-
-.card__category {
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
-    font-size: 13px;
-    letter-spacing: 2px;
-    font-weight: 500;
-  color: #868686;
-}
-
-.card__title {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-family: 'Roboto Slab', serif;
-}
-
-.card__by {
-    font-size: 12px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-}
-
-.card__author {
-    font-weight: 600;
-    text-decoration: none;
-    color: #AD7D52;
-}
-
-.card:hover .card__img--hover {
-    height: 100%;
-    opacity: 0.3;
-}
-
-.card:hover .card__info {
-    background-color: transparent;
+    display: inline-block;
+    vertical-align: top;
+    width: 380px;
     position: relative;
+    overflow: hidden;
+    margin: 10px;
+    background: #FFF;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    color: #272727;
+    border-radius: 2px;
+  }
+
+.card .fab {
+  position: absolute;
+  bottom: -$fab-size/2.5;
+  right: 20px;
+  height: $fab-size;
+  width: $fab-size;
+  padding: 1rem;
+  border-radius: $fab-size/2;
+  background-color: rgb(67, 138, 243) ;
+  color: white;
+  border: 0;
+  font-size: 1.4rem;
+  line-height: 10px;
+  outline: none;
+
+  &:active {
+    animation: squish 0.75s ease;
+  }
+}
+  .card .title {
+    line-height: 48px;
+    font-size: 24px;
+    font-weight: 300;
+  }
+  .card .content {
+    padding: 20px;
+    font-weight: 300;
+    border-radius: 0 0 2px 2px;
+  }
+  .card p {
+    margin: 0;
+  }
+  .card .action {
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+    padding: 20px;
+  }
+  .card a {
+    color: $link-color;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .card .image {
+    min-height: 200px;
+    position: relative;
+    background: #3949AB;
+  }
+  .card .image img {
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .card .image .title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    color: #FFF;
+  }
+
+@keyframes squish {
+  0%, 30%, 100% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(0.975);
+  }
+  40% {
+    transform: scale(1.025);
+  }
+  60% {
+    transform: scale(0.985);
+  }
+  80% {
+    transform: scale(1.01);
+  }
 }
 
-.card:hover .card__info-hover {
-    opacity: 1;
+
+.ripple-effect{
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: white;
+
+
+  animation: ripple-animation 2s;
+}
+
+
+@keyframes ripple-animation {
+    from {
+      transform: scale(1);
+      opacity: 0.4;
+    }
+    to {
+      transform: scale(100);
+      opacity: 0;
+    }
 }

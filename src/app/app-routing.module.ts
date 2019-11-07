@@ -8,7 +8,7 @@ import { CategoriaDetailComponent } from './categoria-detail/categoria-detail.co
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'categorias', component: CategoriasComponent},
-  {path: 'pets', component: CategoriaDetailComponent}
+  {path: 'categorias/:id', component: CategoriaDetailComponent}
 ];
 
 @NgModule({

@@ -1,9 +1,9 @@
-        <div  class="card card-01 height-fix">
-<img class="card-img-top" src="https://love.doghero.com.br/wp-content/uploads/2018/11/garantia-veterin%C3%A1ria-e1542651264685-941x1024.jpg" alt="Card image cap">
-<div class="card-img-overlay">
-  <h4 class="card-title"><strong>{{categoria.nome}}</strong></h4>
-  <p class="card-text">{{categoria.sobre}}</p>
-  <p class="card-text"><a href="#" class="fa fa-bookmark-o"></a><a class="fa fa-heart-o" href="#"></a></p>
-  <button class="btn btn-dark" [routerLink]="['/pets']">Ver Pets</button>
-</div>
+<div  class="card card-01 height-fix">
+  <img class="card-img-top" src="https://love.doghero.com.br/wp-content/uploads/2018/11/garantia-veterin%C3%A1ria-e1542651264685-941x1024.jpg" alt="Card image cap">
+  <div class="card-img-overlay">
+    <h4 class="card-title"><strong>{{categoria.nome}}</strong></h4>
+    <p class="card-text">{{categoria.sobre}}</p>
+    <p class="card-text"><a href="#" class="fa fa-bookmark-o"></a><a class="fa fa-heart-o" href="#"></a></p>
+    <button class="btn btn-dark" [routerLink]="['/categorias', categoria.id]">Ver Pets</button>
+  </div>
 </div>
