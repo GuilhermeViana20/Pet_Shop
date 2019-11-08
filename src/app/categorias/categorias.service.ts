@@ -13,12 +13,10 @@ export class CategoriasService {
 
   obterCategorias(): Observable<Categoria[]>{
     return this.http.get<Categoria[]>(`${PETLOVE_API}/categorias`)
+  }
 
-}
-
-categoriaById(id:string): Observable<Categoria[]>{
-  return this.http.get<Categoria[]>(`${PETLOVE_API}/pets/${id}`)
-
-}
+  obterCategoriaById(id:string): Observable<Categoria>{
+    return this.http.get<Categoria>(`${PETLOVE_API}/categorias/${id}`)
+  }
 
 }

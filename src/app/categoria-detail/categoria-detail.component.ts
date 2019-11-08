@@ -17,13 +17,13 @@ export class CategoriaDetailComponent implements OnInit {
               private route: ActivatedRoute) { }
 
   ngOnInit() {
-    // this.listarPets();
+    this.listarCategoriasDePet();
 
   }
 
-    // listarPets(){
-    //   this.categoriasService.categoriaById(this.route.snapshot.params['id'])
-    //   .subscribe(categoria => this.categoria = categoria)
-    // }
+  listarCategoriasDePet(){
+      this.categoriasService.obterCategoriaById(this.route.snapshot.params['id'])
+      .subscribe(categoria => this.categoria = categoria)
+    }
 
 }
