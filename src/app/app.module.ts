@@ -11,6 +11,8 @@ import { CategoriasComponent } from './categorias/categorias.component';
 import { CategoriaComponent } from './categorias/categoria/categoria.component';
 import { CategoriasService } from './categorias/categorias.service';
 import { CategoriaDetailComponent } from './categoria-detail/categoria-detail.component';
+import { CadastroAdocaoComponent } from './cadastro-adocao/cadastro-adocao.component';
+import { ControleComponent } from './controle/controle.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { CategoriaDetailComponent } from './categoria-detail/categoria-detail.co
     FooterComponent,
     CategoriasComponent,
     CategoriaComponent,
-    CategoriaDetailComponent
+    CategoriaDetailComponent,
+    CadastroAdocaoComponent,
+    ControleComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,95 @@
+<app-header></app-header>
+  <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-8" src="https://image.freepik.com/vetores-gratis/desenho-de-cachorrinho-fofo-isolado-no-fundo-branco_29190-4196.jpg" alt="" width="72" height="72">
+    <h2 class="text-italic text-primary">Cadastro de Adoção</h2>
+    <p class="lead">Preencha todos os dados necessários para a finalização da adoção.</p>
+  </div>
+
+
+  <div class="container">
+    <div class="jumbotron">
+
+
+
+  <div class="row">
+
+    <div class="col-md-12 order-md-1">
+      <form class="needs-validation" novalidate="">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="Name">Nome Completo</label>
+            <input class="form-control" id="Name" placeholder="" value="" required="" type="text">
+            <div class="invalid-feedback">
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="NamePet">Nome do Pet</label>
+            <input class="form-control" id="NamePet" placeholder="" value="" required="" type="text">
+            <div class="invalid-feedback">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="Name">CPF</label>
+            <input class="form-control" id="cpf" placeholder="" value="" required="" type="text">
+            <div class="invalid-feedback">
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="NamePet">RG</label>
+            <input class="form-control" id="rg" placeholder="" value="" required="" type="text">
+            <div class="invalid-feedback">
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Email <span class="text-muted">(Opcional)</span></label>
+          <input class="form-control" id="email" placeholder="exemplo@example.com" type="email">
+          <div class="invalid-feedback">
+            Por favor,preencha o campo comum email válido.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="address">Endereço</label>
+          <input class="form-control" id="address" placeholder="rua, número da residência, cidade" required="" type="text">
+          <div class="invalid-feedback">
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="address">CEP</label>
+          <input class="form-control" id="cep" placeholder="XX.XXX-XXX" required="" type="text">
+          <div class="invalid-feedback">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="country">Estado</label>
+            <select class="custom-select d-block w-100" id="country" required="">
+              <option value="">escolher...</option>
+              <option>São Paulo</option>
+              <option>Rio de Janeiro</option>
+              <option>Amazonas</option>
+              <option>Ceará</option>
+            </select>
+            <div class="invalid-feedback">
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" id="same-address" type="checkbox">
+          <label class="custom-control-label" for="same-address">Aceito todos os termos de adoção.</label>
+        </div>
+        <hr class="mb-4">
+        <button class="btn btn-outline-primary btn-lg btn-block" type="submit" [routerLink]="['/finalizarAdocao']">Finalizar Adoção</button>
+      </form>
+    </div>
+  </div>
+  </div>
+</div>
