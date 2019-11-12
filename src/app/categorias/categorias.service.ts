@@ -22,8 +22,8 @@ export class CategoriasService {
     return this.http.get<Categoria>(`${PETLOVE_API}/categorias/${id}`)
   }
 
-  obterPetDeCategoria(id: string): Observable<PetItem>{
-  return this.http.get<PetItem>(`${PETLOVE_API}/categorias/${id}/pets`)
+  obterPetDeCategoria(id: string): Observable<PetItem[]>{
+  return this.http.get<PetItem[]>(`${PETLOVE_API}/categorias/${id}/pets`)
 }
 
 }

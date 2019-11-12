@@ -12,7 +12,7 @@ import { PetItem } from '../pet-item/pet-item.model';
 })
 export class PetComponent implements OnInit {
 
-pet: Observable<PetItem>
+pet: Observable<PetItem[]>
 
 
   constructor(private categoriasService: CategoriasService,
@@ -26,6 +26,10 @@ pet: Observable<PetItem>
   listarPetsDeCategoria(){
   this.pet = this.categoriasService
   .obterPetDeCategoria(this.route.snapshot.params['id'])
+}
+
+addPetItem(item: PetItem){
+  console.log(item)
 }
 
 

@@ -14,7 +14,6 @@ import { CategoriaDetailComponent } from './categoria-detail/categoria-detail.co
 import { CadastroAdocaoComponent } from './cadastro-adocao/cadastro-adocao.component';
 import { ControleComponent } from './controle/controle.component';
 import { PetComponent } from './categoria-detail/pet/pet.component';
-import { PetDetailComponent } from './categoria-detail/pet-detail/pet-detail.component';
 import { PetItemComponent } from './categoria-detail/pet-item/pet-item.component'
 
 @NgModule({
@@ -29,7 +28,6 @@ import { PetItemComponent } from './categoria-detail/pet-item/pet-item.component
     CadastroAdocaoComponent,
     ControleComponent,
     PetComponent,
-    PetDetailComponent,
     PetItemComponent
   ],
   imports: [
