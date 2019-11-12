@@ -1,0 +1,11 @@
+<div class="container" *ngFor="let pet of pets">
+  <div class="card">
+    <img src="https://thumbs.web.sapo.io/?W=800&H=0&delay_optim=1&epic=NGFkJJp4MzrzlJlph1rBcFJhmY7qQIv6Vptom4uIhYv8lh/xEjqfb80Ly3H6a4LktyT4vdzxnRAsrkRM/XYPnJJpOaiFVZdbVvAIR7zyxjS5KHM=">
+    <h4>{{pet.raca}}</h4>
+    <h5>Características do Pet</h5>
+    <p>Altura: {{pet.altura}}</p>
+    <p>Peso: {{pet.peso}}</p>
+    <p>Sexo: {{pet.sexo}}</p>
+    <p>Idade: {{pet.idade}}</p>
+    <button class="btn btn-primary" [routerLink]="['/cadastroAdocao']">Adotar Pet</button>
+  </div>

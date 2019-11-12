@@ -3,6 +3,8 @@ import { Categoria } from './categoria/categoria.model';
 import { PETLOVE_API } from '../app.api'
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+// import { Pet } from '../categoria-detail/pet/pet.model';
+
 
 @Injectable({
   providedIn: 'root'
@@ -18,5 +20,9 @@ export class CategoriasService {
   obterCategoriaById(id:string): Observable<Categoria>{
     return this.http.get<Categoria>(`${PETLOVE_API}/categorias/${id}`)
   }
+
+  obterPetDeCategoria(id: string): Observable<any>{
+  return this.http.get<any>(`${PETLOVE_API}/categorias/${id}/pets`)
+}
 
 }
