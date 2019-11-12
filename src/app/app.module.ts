@@ -13,7 +13,9 @@ import { CategoriasService } from './categorias/categorias.service';
 import { CategoriaDetailComponent } from './categoria-detail/categoria-detail.component';
 import { CadastroAdocaoComponent } from './cadastro-adocao/cadastro-adocao.component';
 import { ControleComponent } from './controle/controle.component';
-import { PetComponent } from './categoria-detail/pet/pet.component'
+import { PetComponent } from './categoria-detail/pet/pet.component';
+import { PetDetailComponent } from './categoria-detail/pet-detail/pet-detail.component';
+import { PetItemComponent } from './categoria-detail/pet-item/pet-item.component'
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { PetComponent } from './categoria-detail/pet/pet.component'
     CategoriaDetailComponent,
     CadastroAdocaoComponent,
     ControleComponent,
-    PetComponent
+    PetComponent,
+    PetDetailComponent,
+    PetItemComponent
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,7 @@ import { Categoria } from './categoria/categoria.model';
 import { PETLOVE_API } from '../app.api'
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { PetItem } from '../categoria-detail/pet-item/pet-item.model';
 // import { Pet } from '../categoria-detail/pet/pet.model';
 
 
@@ -21,8 +22,8 @@ export class CategoriasService {
     return this.http.get<Categoria>(`${PETLOVE_API}/categorias/${id}`)
   }
 
-  obterPetDeCategoria(id: string): Observable<any>{
-  return this.http.get<any>(`${PETLOVE_API}/categorias/${id}/pets`)
+  obterPetDeCategoria(id: string): Observable<PetItem>{
+  return this.http.get<PetItem>(`${PETLOVE_API}/categorias/${id}/pets`)
 }
 
 }

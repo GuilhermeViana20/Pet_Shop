@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CategoriasService } from 'src/app/categorias/categorias.service';
 import { ActivatedRoute } from '@angular/router'
 import { Observable } from 'rxjs';
+import { PetItem } from '../pet-item/pet-item.model';
 
 
 @Component({
@@ -11,15 +12,21 @@ import { Observable } from 'rxjs';
 })
 export class PetComponent implements OnInit {
 
-pet: Observable<any>
+pet: Observable<PetItem>
 
 
   constructor(private categoriasService: CategoriasService,
               private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.pet = this.categoriasService.obterPetDeCategoria(this.route.parent.snapshot.params['id'])
+    this.listarPetsDeCategoria();
+
   }
+
+  listarPetsDeCategoria(){
+  this.pet = this.categoriasService
+  .obterPetDeCategoria(this.route.snapshot.params['id'])
+}
 
 
 

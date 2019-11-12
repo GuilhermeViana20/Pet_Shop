@@ -1,0 +1,10 @@
+<div class="card">
+  <img src="https://thumbs.web.sapo.io/?W=800&H=0&delay_optim=1&epic=NGFkJJp4MzrzlJlph1rBcFJhmY7qQIv6Vptom4uIhYv8lh/xEjqfb80Ly3H6a4LktyT4vdzxnRAsrkRM/XYPnJJpOaiFVZdbVvAIR7zyxjS5KHM=">
+  <h4>{{petItem.raca}}</h4>
+  <h5>Características do Pet</h5>
+  <p>Altura: {{petItem.altura}}</p>
+  <p>Peso: {{petItem.peso}}</p>
+  <p>Sexo: {{petItem.sexo}}</p>
+  <p>Idade: {{petItem.idade}}</p>
+  <button (click)="EmitAddEvent()" class="btn btn-primary" [routerLink]="['/cadastroAdocao']">Adotar Pet</button>
+</div>
