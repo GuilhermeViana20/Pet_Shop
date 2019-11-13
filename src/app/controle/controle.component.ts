@@ -12,4 +12,5 @@ export class ControleComponent implements OnInit {
   ngOnInit() {
   }
 
+
 }

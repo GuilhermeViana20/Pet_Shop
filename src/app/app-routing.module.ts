@@ -5,6 +5,7 @@ import { CategoriasComponent } from './categorias/categorias.component';
 import { CategoriaDetailComponent } from './categoria-detail/categoria-detail.component';
 import { CadastroAdocaoComponent } from './cadastro-adocao/cadastro-adocao.component';
 import { ControleComponent } from './controle/controle.component';
+import { CadastroCategoriaComponent } from './controle/cadastro-categoria/cadastro-categoria.component'
 
 
 const routes: Routes = [
@@ -12,7 +13,9 @@ const routes: Routes = [
   {path: 'categorias', component: CategoriasComponent},
   {path: 'categorias/:id', component: CategoriaDetailComponent},
   {path: 'cadastroAdocao', component: CadastroAdocaoComponent},
-  {path: 'painelDeControle', component: ControleComponent}
+  {path: 'painelDeControle', component: ControleComponent},
+  {path: 'cadastroCategoria', component: CadastroCategoriaComponent}
+
 ];
 
 @NgModule({

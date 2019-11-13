@@ -1,0 +1,123 @@
+<!-- INICIO DO NAVBAR -->
+
+<div class="wrapper">
+
+<nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>PetLove</h3>
+  </div>
+
+  <ul class="list-unstyled components">
+    <p>Gerenciamento</p>
+    <li>
+      <a [routerLink]="['/']">Home</a>
+      <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Cadastros</a>
+      <ul class="collapse list-unstyled" id="pageSubmenu">
+        <li><a href="#">Cadastrar Categoria Pet </a></li>
+        <li><a href="#">Cadastrar Pet</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Sobre</a>
+      <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Gerenciamentos</a>
+      <ul class="collapse list-unstyled" id="pageSubmenu">
+        <li><a href="#">Gerenciar Categoria Pet </a></li>
+        <li><a href="#">Gerenciar Pet</a></li>
+      </ul>
+    </li>
+    <li>
+      <a [routerLink]="['/categorias']">Categoria Pet</a>
+    </li>
+    <li>
+      <a>Pets</a>
+    </li>
+  </ul>
+
+  <ul class="list-unstyled CTAs">
+
+    <li><a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to the article</a></li>
+  </ul>
+</nav>
+
+<!-- Page Content Holder -->
+<div id="content">
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <button type="button" id="sidebarCollapse" class="navbar-btn">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                          </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Page</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <form class="needs-validation" novalidate [formGroup]= "form" (ngSubmit)="onSubmit()">
+
+      {{ form.valid }}
+      {{ form.value | json }}
+
+      <div class="group-gap">
+
+          <div class="avatar-upload">
+              <div class="avatar-edit">
+                  <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" #fileInput (change)="uploadFile($event)"/>
+              </div>
+              <div class="avatar-preview">
+                  <div id="imagePreview" [style.backgroundImage]="'url('+ imageUrl +')'"></div>
+              </div>
+          </div>
+      </div>
+
+      <button type="submit" class="btn btn-danger btn-lg btn-block" (click)="fileInput.click()">Upload Image</button>
+
+      <div>
+          <input type="text" Class="form-control mt-3 mb-3" id="name" placeholder="Nome da Loja"
+              formControlName = "name"/>
+      </div>
+
+      <div>
+          <input type="text" class="form-control mt-3 mb-3" id="category" placeholder="Categoria da Loja"
+              formControlName = "category"/>
+      </div>
+
+      <div>
+          <textarea class="form-control mb-3" rows="5" id="about" placeholder="Descrição da Loja"
+              formControlName = "about"></textarea>
+      </div>
+
+
+
+      <div class="text-right">
+
+          <button type="submit" class="btn btn-outline-primary"  (click)="cadastrar()">
+              <h4>Cadastrar</h4>
+          </button>
+
+          <button style="margin-left: 5px;" type="button" class="btn btn-outline-danger" (click)="onCancel()">
+              <h4>Cancelar</h4>
+          </button>
+
+      </div>
+  </form>
+
+      </div>
+    </div>
+
+
+
+
+
+<!-- FIM DO NAVBAR -->
